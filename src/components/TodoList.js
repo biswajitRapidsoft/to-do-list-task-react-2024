@@ -11,14 +11,14 @@ export default function TodoList() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!text || !date || !time) {
+    if (!text.trim() || !date || !time) {
         alert("Please fill out all fields");
         return;
     }
 
     let toDo = {
         id: new Date().getHours() + '-' + new Date().getMinutes() + '-' + new Date().getSeconds(),
-        text: text,
+        text: text.trim(),
         date: date,
         time: time,
         completed: false
