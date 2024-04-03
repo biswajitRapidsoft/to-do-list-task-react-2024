@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Navbar from './Navbar';
+import ToDo from './ToDo';
 
 export default function TodoList() {
   const [text, setText] = useState('');
@@ -99,41 +101,12 @@ export default function TodoList() {
   return (
     <>
         <div className="container">
-            <nav className="navbar navbar-expand-lg bg-secondary mb-3 rounded">
-                <div className="container-fluid">
-                    <form className="d-flex justify-content-between w-100" role="search" onSubmit={editMode ? handleUpdate : handleSubmit}>
-                        <input className="form-control me-2 flex-grow-1" type="text" placeholder="Type Here..." value={text} onChange={(e) => setText(e.target.value)}/>
-                        <input className="me-2 border-0 rounded px-2" style={{width: '175px'}} type="date" name="date" id="date" value={date} onChange={(e) => setDate(e.target.value)}/>
-                        <input className="me-2 border-0 rounded px-2" style={{width: '123px'}} type="time" name="time" id="time" value={time} onChange={(e) => setTime(e.target.value)}/>
-                        {editMode ? (
-                            <button className="btn btn-dark" type="submit">Update</button>
-                        ) : (
-                            <button className="btn btn-dark" type="submit">Add</button>
-                        )}
-                    </form>
-                </div>
-            </nav>
+            <Navbar editMode={editMode} handleUpdate={handleUpdate} handleSubmit={handleSubmit} text={text} setText={setText} date={date} setDate={setDate} time={time} setTime={setTime}/>
 
             <div className="accordion accordion-flush" id="accordionFlushExample">
                 {allTodos.map((todo) => {
                     return (
-                        <div className="accordion-item" key={todo.id}>
-                            <h2 className="accordion-header">
-                            <button className="accordion-button collapsed bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse-${todo.id}`} aria-expanded="false" aria-controls={`#flush-collapse-${todo.id}`}>
-                                Task @{todo.id}
-                            </button>
-                            </h2>
-                            <div id={`flush-collapse-${todo.id}`} className="accordion-collapse collapse">
-                                <div className="accordion-body d-flex justify-content-between align-items-center bg-light">
-                                    <p className={`my-auto ${todo.completed ? 'text-decoration-line-through text-body-tertiary' : ''}`} style={{width: '60%'}}>Task: {todo.text} to be done at {`${todo.time}`} on {`${todo.date}`}</p>
-                                    <div className="todoBtns">
-                                        <button type="button" className="btn btn-dark edit me-3" onClick={() => handleEdit(todo.id)}>Edit</button>
-                                        <button type="button" className="btn btn-dark completed me-3" onClick={() => handleComplete(todo.id)}>Completed</button>
-                                        <button type="button" className="btn btn-dark delete" onClick={() => handleDelete(todo.id)}>Delete</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      <ToDo todo={todo} handleEdit={handleEdit} handleComplete={handleComplete} handleDelete={handleDelete}/>
                     )
                 })}
             </div>
