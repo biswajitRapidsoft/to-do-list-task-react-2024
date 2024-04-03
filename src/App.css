@@ -1,3 +1,17 @@
+/* body {
+  background-color:darkolivegreen;
+} */
+
+.header h1 {
+  font-family: "Lobster";
+  color: white;
+  margin: 0;
+}
+
+p {
+  font-family: 'Caveat';
+}
+
 @media screen and (max-width: 992px) {
   .accordion-body {
     flex-direction: column;

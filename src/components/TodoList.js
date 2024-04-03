@@ -100,17 +100,21 @@ export default function TodoList() {
 
   return (
     <>
-        <div className="container">
-            <Navbar editMode={editMode} handleUpdate={handleUpdate} handleSubmit={handleSubmit} text={text} setText={setText} date={date} setDate={setDate} time={time} setTime={setTime}/>
-
-            <div className="accordion accordion-flush" id="accordionFlushExample">
-                {allTodos.map((todo) => {
-                    return (
-                      <ToDo todo={todo} handleEdit={handleEdit} handleComplete={handleComplete} handleDelete={handleDelete}/>
-                    )
-                })}
-            </div>
+      <div className="container py-3">
+        <div className="header text-center bg-dark rounded py-2 mb-3">
+          <h1>ToDo List</h1>
         </div>
+
+        <Navbar editMode={editMode} handleUpdate={handleUpdate} handleSubmit={handleSubmit} text={text} setText={setText} date={date} setDate={setDate} time={time} setTime={setTime}/>
+
+        <div className="accordion accordion-flush" id="accordionFlushExample">
+            {allTodos.map((todo) => {
+                return (
+                  <ToDo  key={todo.id} todo={todo} handleEdit={handleEdit} handleComplete={handleComplete} handleDelete={handleDelete}/>
+                )
+            })}
+        </div>
+      </div>
     </>
   )
 }
