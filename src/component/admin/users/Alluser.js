@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import Company from "../companys/Company";
+import React from "react";
 import User from "./User";
 export default function Alluser({ user, setuser }) {
   return (

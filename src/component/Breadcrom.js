@@ -15,8 +15,6 @@ function Breadcrumb({ crumbs }) {
   }
   const handleCrumbClick = (crumb, ci) => {
     if (!isLast(ci)) {
-      const crumbIndex = crumbs.findIndex((c) => c.title === crumb.title);
-      const newCrumbs = crumbs.slice(0, crumbIndex + 1);
       navigate(`${crumb.path}`);
     }
   };
