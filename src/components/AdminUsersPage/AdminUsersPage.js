@@ -14,13 +14,11 @@ export default function AdminUsersPage() {
 
     const { state } = useLocation();
 
-    const company = state
-
-    // console.log(company)
+    const company = state;
   
     useEffect(() => {
       fetchUsers();
-    }, []);
+    });
 
     const fetchUsers = async () => {
       try {

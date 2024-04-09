@@ -16,7 +16,7 @@ export default function TodoList() {
 
   useEffect(() => {
     fetchTodoList()
-  },[])
+  })
   
   const fetchTodoList = async () => {
     try {
