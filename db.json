@@ -1,0 +1,192 @@
+{
+  "company": [
+    {
+      "id": "a9052cdb-7357-4dd9-8ac4-0eccc2957683",
+      "companyName": "Rapidsoft Technologies Pvt Ltd",
+      "companyToken": "RST"
+    },
+    {
+      "id": "de872e4d-c775-4c9b-952f-55ae9de4aec0",
+      "companyName": "Accenture",
+      "companyToken": "ACNT"
+    },
+    {
+      "id": "9abddd59-7171-4374-b84f-3cc6a4ccc378",
+      "companyName": "abcd",
+      "companyToken": "abcd"
+    }
+  ],
+  "users": [
+    {
+      "id": "0",
+      "userName": "Adi",
+      "password": "0000",
+      "role": "super admin"
+    },
+    {
+      "id": "2",
+      "userName": "Surya",
+      "password": "5678",
+      "companyId": "a9052cdb-7357-4dd9-8ac4-0eccc2957683",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "userName": "Udit",
+      "password": "9012",
+      "companyId": "a9052cdb-7357-4dd9-8ac4-0eccc2957683",
+      "role": "user"
+    },
+    {
+      "id": "4",
+      "userName": "Subham",
+      "password": "3456",
+      "companyId": "de872e4d-c775-4c9b-952f-55ae9de4aec0",
+      "role": "user"
+    },
+    {
+      "id": "5",
+      "userName": "Amit",
+      "password": "7890",
+      "companyId": "de872e4d-c775-4c9b-952f-55ae9de4aec0",
+      "role": "user"
+    },
+    {
+      "id": "b9abfbd4-5749-417d-b42c-575d77200407",
+      "userName": "demo",
+      "password": "1234",
+      "companyId": "9abddd59-7171-4374-b84f-3cc6a4ccc378",
+      "role": "user"
+    }
+  ],
+  "todolist": [
+    {
+      "id": "taske7f50be6-a9bc-47b3-a356-004c7df84097",
+      "text": "awedawer",
+      "date": "2024-04-05",
+      "time": "18:37",
+      "userId": null,
+      "completed": true
+    },
+    {
+      "id": "taskd99cd2fb-3c29-4b8f-b374-634b682d580c",
+      "text": "awedawer",
+      "date": "2024-04-12",
+      "time": "19:48",
+      "userId": null,
+      "completed": false
+    },
+    {
+      "id": "taskc2656da4-6ad1-43d2-9260-827ad1d05733",
+      "text": "laksihpisud",
+      "date": "2024-05-03",
+      "time": "15:10",
+      "userId": "2",
+      "completed": false
+    },
+    {
+      "id": "taske65551d4-b82c-409f-9238-416192061ebd",
+      "text": "KSJDUbonISUD",
+      "date": "2024-04-18",
+      "time": "15:00",
+      "userId": "2",
+      "completed": false
+    },
+    {
+      "id": "task51a4ac25-651a-43dc-9dfd-9a69d991e6fe",
+      "text": "aiusfhbyasgd",
+      "date": "2024-04-10",
+      "time": "16:14",
+      "userId": "3",
+      "completed": false
+    },
+    {
+      "id": "task244cd033-cb99-4268-9e06-dfab7fc9bbb0",
+      "text": "nfvlikd",
+      "date": "2024-04-24",
+      "time": "17:15",
+      "userId": "3",
+      "completed": false
+    },
+    {
+      "id": "task29d6ca11-16a9-45ae-a386-b48f929cb8d4",
+      "text": "zkzhbdusA",
+      "date": "2024-05-17",
+      "time": "03:15",
+      "userId": "3",
+      "completed": false
+    },
+    {
+      "id": "task40881310-f512-4294-a70e-fb25c68ab2f0",
+      "text": "SKDBJOGNSID",
+      "date": "2024-05-04",
+      "time": "15:30",
+      "userId": "4",
+      "completed": false
+    },
+    {
+      "id": "task835ba8e5-e3ee-4f20-93f4-e8473a45ce69",
+      "text": "OIPUV BNOJ",
+      "date": "2024-06-20",
+      "time": "02:14",
+      "userId": "4",
+      "completed": false
+    },
+    {
+      "id": "taskcad00cd9-6f0b-4437-8e85-c7454f805d21",
+      "text": "VUYkglsbn:akDUGFSKZD",
+      "date": "2024-04-09",
+      "time": "14:30",
+      "userId": "4",
+      "completed": false
+    },
+    {
+      "id": "taskd31f8c52-31be-49d8-aefa-ede8140454f7",
+      "text": "P2387HBS",
+      "date": "2024-04-18",
+      "time": "18:12",
+      "userId": "5",
+      "completed": false
+    },
+    {
+      "id": "taske3fe3d7a-2cde-4756-83bc-f00873f06b16",
+      "text": "E54SREH",
+      "date": "2024-05-26",
+      "time": "15:15",
+      "userId": "5",
+      "completed": false
+    },
+    {
+      "id": "task1f239c6c-dcaa-4364-b739-36bff056855f",
+      "text": "LBSAKEFHP",
+      "date": "2024-04-17",
+      "time": "16:16",
+      "userId": "5",
+      "completed": false
+    },
+    {
+      "id": "taskc524f942-f874-4189-9d57-8fee329de387",
+      "text": "osiruoa039487909",
+      "date": "2024-07-12",
+      "time": "17:17",
+      "userId": null,
+      "completed": false
+    },
+    {
+      "id": "task8a82c3ff-4d7b-45f1-8a7c-dedadabace6a",
+      "text": "498fs'.;yuvsdzg63",
+      "date": "2024-05-31",
+      "time": "14:55",
+      "userId": "b9abfbd4-5749-417d-b42c-575d77200407",
+      "completed": false
+    },
+    {
+      "id": "task1b3b72ae-f6b2-43c3-aaa5-6eccd0bfbe41",
+      "text": "rwedskjf",
+      "date": "2024-04-17",
+      "time": "16:19",
+      "userId": "b9abfbd4-5749-417d-b42c-575d77200407",
+      "completed": false
+    }
+  ]
+}

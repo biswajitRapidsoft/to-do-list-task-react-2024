@@ -8,9 +8,9 @@
   margin: 0;
 }
 
-p {
+/* p {
   font-family: 'Caveat';
-}
+} */
 
 @media screen and (max-width: 992px) {
   .accordion-body {
@@ -20,4 +20,17 @@ p {
   .todoBtns {
     margin-top: 10px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+a:current {
+  color: aqua;
 }

@@ -5,7 +5,7 @@ export default function ToDo(props) {
         <div className="accordion-item mb-1 rounded">
             <h2 className="accordion-header">
             <button className="accordion-button collapsed bg-dark text-white rounded fs-5 text-white" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse-${props.todo.id}`} aria-expanded="false" aria-controls={`#flush-collapse-${props.todo.id}`}>
-                Task @{props.todo.id}
+                Task #{props.todo.id}
             </button>
             </h2>
             <div id={`flush-collapse-${props.todo.id}`} className="accordion-collapse collapse">
