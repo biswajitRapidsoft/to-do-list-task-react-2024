@@ -83,7 +83,7 @@ export default function Login() {
         </div>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
-            Compant Token
+            Company Token
           </label>
           <input
             type="text"
